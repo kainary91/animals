@@ -18,4 +18,9 @@ public class Bird extends Animal{
     public boolean isMigratoryBird() {
         return migratoryBird;
     }
+
+    @Override
+    public String toString() {
+        return "Bird";
+    }
 }

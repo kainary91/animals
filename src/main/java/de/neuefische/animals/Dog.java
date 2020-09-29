@@ -16,4 +16,9 @@ public class Dog extends Animal {
     public void protectHouse(){
         System.out.println("Scares burglar.");
     }
+
+    @Override
+    public String toString() {
+        return "Dog";
+    }
 }

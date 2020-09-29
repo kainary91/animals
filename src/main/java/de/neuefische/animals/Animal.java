@@ -5,10 +5,7 @@ public abstract class Animal {
         this.sound = sound;
     }
 
-    @Override
-    public String toString() {
-        return "";
-    }
+
 
     private String sound;
 
@@ -17,4 +14,6 @@ public abstract class Animal {
     }
    abstract void move();
 
+    @Override
+    public abstract String toString();
 }
