@@ -23,5 +23,24 @@ class AnimalListTest {
     }
 
 
+    @Test
+    void toStringAnimal() {
+        // given
+        Animal animal1 = new Dog();
+        Animal animal2 = new Bird();
+
+        AnimalList list = new AnimalList(animal1);
+        list.addAnimal(animal2);
+
+        String expected = "Dog->Bird";
+
+        // when
+        String actual = list.toString();
+
+        // then
+        assertEquals(expected, actual);
+    }
+
+
 
 }

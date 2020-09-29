@@ -41,21 +41,21 @@ public class AnimalList {
         }
 
     }
-    /*
-    Schreibe eine Klasse AnimalListItem mit
-einer variable value von Type Animal
-einer variable next von Typ AnimalListItem
-einem Konstruktor mit value als Parameter
-eine Methode add die ein Element ans ende anhängt
-schreibe eine Methode welche die Liste wenn sie
-die Elemente a,b und c enthält wie folgt als String zurückgibt “a -> b -> c”
 
-
-Implementiere eine Methode remove welche alle Elemente mit einem entsprechenden Wert entfernt.
-Schreibe entsprechende Tests
-
-     */
     public void removeAnimal(Animal animal) {
 
+    }
+
+    @Override
+    public String toString() {
+        if(next == null) {
+
+            return animal.toString();
+        }
+        String out = "";
+        out+= animal.toString();
+        out+="->";
+        out+= next.toString();
+        return out;
     }
 }
