@@ -1,14 +1,16 @@
 package de.neuefische.animals;
 
-public class Bird implements Animal{
+public class Bird extends Animal{
 
-    private String sound = "Piep piep";
     private boolean migratoryBird = true;
-
+    public Bird(){
+        super("Piep piep");
+    }
+/*
     public String getSound() {
         return sound;
     }
-
+*/
     public void move() {
         System.out.println("Flies around town.");
     }
